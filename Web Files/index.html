@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./manifest.json">
+<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#000000">
+    <title>Hilton Hotels</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+          <!--header: contains logo and navigation buttons-->
+          <header id="header">
+            <!--Navigation Bar-->
+            <a href="./index.html"><img class="logo" src="./hilton white logo.png" alt="hilton logo" width="100px"></a>
+            <nav>
+                <ul class="navlinks">
+                    <li><a href="./branches.html">Branches</a></li>
+                    <li><a href="./adventures.html">Adventures</a></li>
+                    <li><a href="./Restaurants.html">Restaurants</a></li>
+                </ul>
+            </nav>
+            <a class="book" a href="./booking.html" ><button>Book Now!</button></a>
+            <section class="menubtn">
+                <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+            </section>
+            <section class="dropdown_menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./branches.html">Branches</a></li>
+                <li><a href="./adventures.html">Adventures</a></li>
+                <li><a href="./Restaurants.html">Restaurants</a></li>
+                <li><a class="book" a href="./booking.html" ><button>Book Now!</button></a></li>
+            </section>
+            <script>
+                const menu_btn = document.querySelector('.menubtn')
+                const menubtnICON = document.querySelector('.menu_btn input')
+                const dropmenu = document.querySelector('.dropdown_menu')
+    
+                menu_btn.onclick = function(){
+                    dropmenu.classList.toggle('open')
+                    const isOpen = dropmenu.classList.contains('open')
+                }
+            </script>
+       </header>
+
+   <!--Introductory section: giving an oversight on the hotels-->
+   <section class="intro">
+        <img src="./38571.avif" alt="view of hilton colombo branch">
+        <article>
+            <h1>Welcome to Hilton!</h1>
+            <br><br>
+            <p>Hilton is a world-renowned hotel chain with a presence in over 100 countries. In Sri Lanka, we have three hotels located in popular tourist destinations: Colombo, Yala, and Weerawila. Our hotels offer a variety of amenities and services to ensure that you have a comfortable and memorable stay. Whether you are traveling for business or pleasure, Hilton Sri Lanka is the perfect place to relax and explore.</p>
+        </article>
+   </section>
+   <section class="funcon">   <!--function container for functions section-->
+    <section class="functions">
+            <section class="item0">
+                <h1>What We Offer</h1>
+            </section>
+            <section class="item1">
+                <section class="imgcontainer">
+                    <section class="img"></section>
+                </section>
+            </section>
+            <section class="item2">
+                <p>Hilton is known for giving an luxurious experience to those who are staying at different Hilton branches all around the world</p>
+                <p>We make sure that our visitors have a pleasant experience by providing facilities of top quality</p>
+            </section>
+            <section class="item3">
+                <h2>Our hotel offers;</h2>
+                <ul>
+                    <li>Top of the Class Bedroom</li>
+                    <li>The Bitters Lab with Exceptional Chemists and Bartenders</li>
+                    <li>The Best Banquet Hall to Celebrate your Best Moments</li>
+                </ul>
+            </section>
+        </section>
+    </section>
+    <section class="branches">
+        <!--branches section-->
+                <h1>Our Branches</h1>
+                <section class="brgrid"><!--branches grid to sectionize the contents-->
+                        <section class="item1"><img class="img" src="./colombohilton.jpg" alt="view of hilton colombo outside view"></section>
+                        <section class="item2">
+                            <h3>Hilton Colombo</h3>
+                            <p>Situated in the bustling area of Colombo, Hilton Colombo is located at the heart of Colombo.</p>
+                        </section>
+                        <section class="item3"><img class="img" src="./yala hilton.jpg" alt="view of hilton yala resort"></section>
+                        <section class="item4">
+                            <h3>Yala Resort</h3>
+                            <p>Experience the wilderness of Yala with Hilton!</p>
+                        </section>
+                        <section class="item5"><img class="img" src="./doubletree.avif" alt="view of hilton Weerawila doubletree"></section>
+                        <section class="item6">
+                            <h3>DoubleTree By Hilton</h3>
+                            <p>Our one and only DoubleTree branch situated near Tissa Weva will make sure to provide a balance of harmony and luxury of nature</p>
+                        </section>
+                </section>
+    </section>
+    <footer>
+        <!--footer section-->
+        <section class="row">
+            <section class="col">
+                <img src="./hilton white logo.png" alt="logo of hilton" class="footlogo">
+                <p>Hilton is a chain of hotels reknowed worldwide for providing a luxurious experience for it's vacators as well as offering many unforgettable functions and adventures around the world.</p>
+            </section>
+            <section class="col">
+                <h3>Global Headquarters<section class="underline" id="glound"><span></span></section></h3>
+                
+                <p>7930 Jones Branch Drive</p>
+                <p>McLean, Virginia 22102</p>
+                <p>USA</p>
+                <p>+1-800-HILTONS</p>
+                <H4 class="email-id">info@hilton.com</H4>
+            </section>
+            <section class="col">
+                <h3>Links<section class="underline"><span></span></section></h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./branches.html">Branches</a></li>
+                    <li><a href="./adventures.html">Adventures</a></li>
+                    <li><a href="./Restaurants.html">Restaurants</a></li>
+                    <li><a href="./booking.html">Bookings</a></li>
+                </ul>
+            </section>
+        </section>
+        <hr>
+        <p class="copyright">Hilton © 2023 - Athanditha Nawarathna - All Rights Reserved</p>
+        <!--Image were taken for Pexels and Official Hilton Website-->
+    <!--Content was taken and rephrased from the Official Hilton Website-->
+    </footer>
+</body>
+</html>

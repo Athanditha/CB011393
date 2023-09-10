@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./manifest.json">
+<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="./event1.css">
+    <title>Dim Sum Feast</title>
+</head>
+<body>
+    <header id="header">
+        <!--Navigation Bar-->
+        <a href="./index.html"><img class="logo" src="./hilton white logo.png" alt="logo" width="100px"></a>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="./branches.html">Branches</a></li>
+                <li><a href="./adventures.html">Adventures</a></li>
+                <li><a href="./Restaurants.html">Restaurants</a></li>
+            </ul>
+        </nav>
+        <a class="book" a href="./booking.html" ><button>Book Now!</button></a>
+        <section class="menubtn">
+            <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+        </section>
+        <section class="dropdown_menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./branches.html">Branches</a></li>
+            <li><a href="./adventures.html">Adventures</a></li>
+            <li><a href="./Restaurants.html">Restaurants</a></li>
+            <li><a class="book" a href="./booking.html" ><button>Book Now!</button></a></li>
+        </section>
+        <script>
+            const menu_btn = document.querySelector('.menubtn')
+            const menubtnICON = document.querySelector('.menu_btn input')
+            const dropmenu = document.querySelector('.dropdown_menu')
+
+            menu_btn.onclick = function(){
+                dropmenu.classList.toggle('open')
+                const isOpen = dropmenu.classList.contains('open')
+            }
+        </script>
+   </header>
+    <!--Introductory Section-->
+    <section class="intro">
+        <img src="./dim sum head pic.jpg" alt="header picture of the dim sum event at hilton">
+        <section>
+            <h1>
+                Dim Sum Feast in Emperor Wok
+            </h1>
+            <p class="eventinfop">
+                Step into the nation of dragons at Emperor's Wok, Hilton Colombo, where an endless dim sum feast awaits!
+            </p>
+            <p class="eventinfop">
+Indulge in an exquisite selection of dim sum delicacies meticulously crafted by the maestro Chef Ming.
+Savor a tantalizing selection of culinary treasures, including Crystal Prawn Har Kau, Steamed Siew Mai Pork & Prawn, Shanghai Pork Dumpling with Crab Meat, Steamed Pork Spare Ribs with Black Bean and Golden Garlic, and Pan Fried Chicken Gyoza.
+Join us every Saturday from 12:00 pm to 2:30 pm for an unforgettable dining experience.
+            </p>
+        </section>
+        </section>
+        <section class="mapcon"><!--Container For the Map/iframe-->
+            <h1 class="evetitle">Location</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.6484877555135!2d79.83986928007923!3d6.93254967519193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259132e85493d%3A0x9d5e04ea64814a8!2sHilton%20Colombo!5e0!3m2!1sen!2slk!4v1693038473461!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+            <h1 class="evetitle">Images of The Endless Dim Sum Event</h1>
+        <section class="imgduocon">
+            <img src="./pexels-parveen-tasud-17998833.jpg" alt="Pot of Dim Sum">
+            <img src="./pexels-whiteplatestories-7745368.jpg" alt="Dim Sum Dish">
+        </section>
+    </section>
+</body>
+<footer>
+    <!--footer section-->
+    <section class="row">
+        <section class="col">
+            <img src="./hilton white logo.png" alt="logo of hilton" class="footlogo">
+            <p>Hilton is a chain of hotels reknowed worldwide for providing a luxurious experience for it's vacators as well as offering many unforgettable functions and adventures around the world.</p>
+        </section>
+        <section class="col">
+            <h3>Global Headquarters<section class="underline" id="glound"><span></span></section></h3>
+            
+            <p>7930 Jones Branch Drive</p>
+            <p>McLean, Virginia 22102</p>
+            <p>USA</p>
+            <p>+1-800-HILTONS</p>
+            <H4 class="email-id">info@hilton.com</H4>
+        </section>
+        <section class="col">
+            <h3>Links<section class="underline"><span></span></section></h3>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./branches.html">Branches</a></li>
+                <li><a href="./adventures.html">Adventures</a></li>
+                <li><a href="./Restaurants.html">Restaurants</a></li>
+                <li><a href="./booking.html">Bookings</a></li>
+            </ul>
+        </section>
+    </section>
+    <hr>
+    <p class="copyright">Hilton © 2023 - Athanditha Nawarathna - All Rights Reserved</p>
+    <!--Image were taken for Pexels and Official Hilton Website-->
+    <!--Content was taken and rephrased from the Official Hilton Website-->
+</footer>
+
+
+
+
+</body>
+</html>
