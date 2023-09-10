@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./manifest.json">
+<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="./style.css">
+    <title>Booking</title>
+</head>
+<body>
+    <header id="header">
+        <!--Navigation Bar-->
+        <a href="./index.html"><img class="logo" src="./hilton white logo.png" alt="hilton logo" width="100px"></a>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="./branches.html">Branches</a></li>
+                <li><a href="./adventures.html">Adventures</a></li>
+                <li><a href="./Restaurants.html">Restaurants</a></li>
+            </ul>
+        </nav>
+        <a class="book" a href="./booking.html" ><button>Book Now!</button></a>
+        <section class="menubtn">
+            <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+        </section>
+        <section class="dropdown_menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./branches.html">Branches</a></li>
+            <li><a href="./adventures.html">Adventures</a></li>
+            <li><a href="./Restaurants.html">Restaurants</a></li>
+            <li><a class="book" a href="./booking.html" ><button>Book Now!</button></a></li>
+        </section>
+        <script>
+            const menu_btn = document.querySelector('.menubtn')
+            const menubtnICON = document.querySelector('.menu_btn input')
+            const dropmenu = document.querySelector('.dropdown_menu')
+
+            menu_btn.onclick = function(){
+                dropmenu.classList.toggle('open')
+                const isOpen = dropmenu.classList.contains('open')
+            }
+        </script>
+   </header>
+   <section class="bookbody">
+        <section class="bookcon">
+            <section class="formbody">
+                <!--Form Head-->
+                <section class="bookhead">
+                    <h2>Make Your Reservations</h2>
+                    <p>Use this form to make your booking.</p>
+                </section>
+                <!--Form Body-->
+
+                <form class="bookmain" action="#">
+                        <section class="br"> <!--row 1-->
+                            <section class="bc1">
+                                <h3>First Name</h3>
+                                <input type="text" name="fname" id="fname" placeholder="Enter Your First Name" required>
+                            </section>
+                            <section class="bc1">
+                                <h3>Last Name</h3>
+                                <input type="text" name="fname" id="fname" placeholder="Enter Your Last Name" required>
+                            </section>
+                        </section>
+                        <section class="br"><!--row 2-->
+                            <section class="bc1">
+                                <h3>E-Mail</h3>
+                                <input type="email" name="email" id="email" placeholder="Enter Your E-Mail" required>
+                            </section>
+                            <section class="bc1">
+                                <h3>Phone No.</h3>
+                                <input type="tel" name="cno" id="cno" placeholder="0712345678" required>
+                            </section>
+                        </section>
+                        <section class="br"><!--row 3-->
+                            <section class="bc1">
+                                <h3>Arrival Date</h3>
+                                <input type="date" name="arrivaldate" id="ad" required>
+                            </section>
+                            <section class="bc1">
+                                <h3>Departure Date</h3>
+                                <input type="date" name="departuredate" id="dd" required>
+                            </section>
+                        </section>
+                        <section class="br"><!--row 4-->
+                            <section class="bc1">
+                                <h3>Branch</h3>
+                                    <select id="brdrop" name="brdrop">
+                                    <option value="nohot">None</option>
+                                    <option value="col">Hilton Colombo</option>
+                                    <option value="yala">Hilton Yala Resort</option>
+                                    <option value="dt">DoubleTree by Hilton</option>
+                                    </select>
+                            </section>
+                            <section class="bc1">
+                                <h3>Adventure</h3>
+                                    <select id="advdrop" name="advdrop">
+                                    <option value="noadv">None</option>
+                                    <option value="col">Colombo City Tour</option>
+                                    <option value="yala">Yala Safari</option>
+                                    <option value="exp">Historical Expedition</option>
+                                    </select>
+                            </section>
+                        </section>
+                        <section class="br"><!--row 5-->
+                            <section class="bc3">
+                            <h3 class="roomtitle">Room Class<h6>(if you have selected a branch)</h6></h3>
+                            <select name="rooms" id="" required>
+                                <option value="noroom">None</option>
+                                <option value="1">Single</option>
+                                <option value="2">Double</option>
+                                <option value="3">Triple</option>
+                            </select>
+                        </section>
+                        </section>
+                        <section class="br"><!--row 6-->
+                            <section class="bc3">
+                                <input type="submit" value="Place Reservations" onclick="alert('Your Reservation will be Placed')">
+                            </section>
+                        </section>
+                    </form>
+            </section>
+        </section>
+
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <footer>
+    <!--footer section-->
+    <section class="row">
+        <section class="col">
+            <img src="./hilton white logo.png" alt="logo of hilton" class="footlogo">
+            <p>Hilton is a chain of hotels reknowed worldwide for providing a luxurious experience for it's vacators as well as offering many unforgettable functions and adventures around the world.</p>
+        </section>
+        <section class="col">
+            <h3>Global Headquarters<section class="underline" id="glound"><span></span></section></h3>
+            
+            <p>7930 Jones Branch Drive</p>
+            <p>McLean, Virginia 22102</p>
+            <p>USA</p>
+            <p>+1-800-HILTONS</p>
+            <H4 class="email-id">info@hilton.com</H4>
+        </section>
+        <section class="col">
+            <h3>Links<section class="underline"><span></span></section></h3>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./branches.html">Branches</a></li>
+                <li><a href="./adventures.html">Adventures</a></li>
+                <li><a href="./Restaurants.html">Restaurants</a></li>
+                <li><a href="./booking.html">Bookings</a></li>
+            </ul>
+        </section>
+    </section>
+    <hr>
+    <p class="copyright">Hilton © 2023 - Athanditha Nawarathna - All Rights Reserved</p>
+    <!--Image were taken for Pexels and Official Hilton Website-->
+    <!--Content was taken and rephrased from the Official Hilton Website-->
+</footer>
+</body>
+</html>
