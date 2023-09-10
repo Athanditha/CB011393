@@ -160,7 +160,7 @@ header{
 }
 .menu {
     --s: 25px; /* control the size */
-    --c: rgb(255, 255, 255); /* the color */
+    --c: var(--textcolor); /* the color */
     
     height: var(--s);
     aspect-ratio: 1;
